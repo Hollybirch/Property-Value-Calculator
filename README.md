@@ -1,5 +1,6 @@
 # Property-Value-Calculator
 
+Follow the steps below to run the project
 
 1) download the folder and copy the excel file into the top level
 
@@ -11,3 +12,6 @@
 
 4) open a web browser and go to : 
       http://127.0.0.1:5000/
+      
+      
+A document containing some suggested improvements that could be made has also been included
