@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </head>
+
+    <body>
+     <div class="row">
+        <div class="col s12"><h3 align="center">House Price Calculator</h3></div>
+     </div>
+
+
+     <div class="row">
+        <div class="col s12 m4 l2"></div>
+        <div class="col s12 m4 l8">
+           <p align="center">This calculator will use the input information to return what the price would be at the ‘to’
+               date given the change in that borough between the two dates</p>
+        </div>
+        <div class="col s12 m4 l2"></div>
+    </div>
+    <br>
+     <div class="row">
+        <div class="col s12 m4 l2"></div>
+        <div class="col s12 m4 l8">
+            {% block content %}
+                <form action = '#' method = 'post'>
+                    <p><b>Borough:</b></p>
+                    <p><i>This is case sensitive</i></p>
+                    <p><input type = "text" name = "borough"/></p>
+                    <br>
+                    <p><b>Date From:</b></p>
+                    <p><i>Enter in the format of DD/MM/YYYY</i></p>
+                    <p><input type = "text" name = "date_from"/></p>
+                    <br>
+                    <p><b>Date To:</b></p>
+                    <p><i>Enter in the format of DD/MM/YYYY</i></p>
+                    <p><input type = "text" name = "date_to"/></p>
+                    <br>
+                    <p><b>Price:</b></p>
+                    <p><i>Enter price as just integers e.g 1000000</i></p>
+                    <p><input type = "text" name = "price"/></p>
+                    <br>
+                    <button class="waves-effect waves-light btn-large" type="submit" value="submit">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            {% endblock %}
+        </div>
+        <div class="col s12 m4 l2"></div>
+    </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
