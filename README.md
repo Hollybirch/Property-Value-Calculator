@@ -2,16 +2,15 @@
 
 Follow the steps below to run the project
 
-1) download the folder and copy the excel file into the top level
+1) Download the folder and copy the excel file into the top level
 
-2) ensure you have pandas and flask downloaded
+2) Ensure you have pandas and flask downloaded
       - pip install flask
       - pip install pandas
       
-3) start the flask development server 
+3) Run house_price_calc.py to start the flask development server 
 
-4) open a web browser and go to : 
-      http://127.0.0.1:5000/
+4) Open a web browser and go to the specified URL
       
       
 A document containing some suggested improvements that could be made has also been included
