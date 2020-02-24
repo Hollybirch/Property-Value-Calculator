@@ -1,0 +1,24 @@
+import unittest2 as ut
+from templates.untitled import house_price_calc
+from templates.untitled.house_price_calc import *
+
+
+class TestCalculationMethods(ut.TestCase):
+    def test_calculation_of_house_price(self):
+        # If you want test code which uses a request context
+        with app.app_context():
+
+            mock_input_price = 100000
+            mock_input_todate = 103.6
+            mock_input_fromdate = 28.25
+
+            test_variable = house_price_calc_improved.calculation(mock_input_price, mock_input_todate,
+                                                                  mock_input_fromdate).data
+
+            expected = jsonify(366726).data
+
+            self.assertEqual(test_variable, expected)
+
+
+if __name__ == '__main__':
+    ut.main()
