@@ -12,5 +12,4 @@ Follow the steps below to run the project
 
 4) Open a web browser and go to the specified URL
       
-      
-A document containing some suggested improvements that could be made has also been included
+
